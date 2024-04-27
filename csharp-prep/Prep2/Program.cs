@@ -48,6 +48,7 @@ class Program
                 }
             }
             Console.WriteLine($"The letter grade is {letterGrade}");
+            Console.WriteLine($"This grade is a {(grade < 70 ? "fail" : "pass")}.");
             Console.Write("Would you like to enter another grade? (y/n) ");
             string response = Console.ReadLine();
             if (response == "n")
